@@ -80,3 +80,49 @@
     clip-path: polygon(6% 0, 100% 0, 94% 100%, 0 100%);
     padding: 5px 30px;
 }
+/*contenedor_principal*/
+.contenido_principal{
+    margin-top: 60px;
+    overflow: hidden;
+}.contenedor_principal1, .contenedor_principal2{ 
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    /* Recuerda agregar efectos en la barra, de lo contrario elimina el position */
+    position: relative;
+    align-items: center;
+}.contenedor_principal1 div, .contenedor_principal2 > div{
+    width: 40%;
+}.contenedor_principal1 h2, .contenedor_principal2 h2{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 4.3em;
+    letter-spacing: 4px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    
+}.contenedor_principal1 p{
+    width: 90%;
+    font-style: italic;
+}.contenedor_principal1 video{
+   border-radius: 40px;
+   width: 100%;
+   
+}.contenedor_principal1 img{
+    width: 100%;
+}/*.contenedor_navegacion2 */
+.contenedor_principal2 div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedor_principal2  div:last-child div{
+        width: 45%;
+
+}.contenedor_principal2 div:last-child img{
+    width: 100%;
+    height: auto;
+    border:black solid 3px;
+    border-radius: 20px;
+}
