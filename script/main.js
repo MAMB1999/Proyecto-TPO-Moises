@@ -201,8 +201,21 @@ const campeones = [
     },
 ];
 
-window.onload = iniciar_campeones();
+
 const contenedor_pag = document.getElementById("contenedor_campeones");
 function iniciar_campeones(){
-    
+    campeones.forEach(campeon =>{
+        const div = document.createElement("div");
+        const div_interno = document.createElement("div");
+        const titulo = document.createElement("h2");
+        const img = document.createElement("img");
+        img.src = "../img/imagenes_header/irelia.jpg";
+       div.className = "contenido_campeon";
+       titulo.textContent = campeon.name;
+       div_interno.appendChild(titulo);
+       div.appendChild(img);
+       div.appendChild(div_interno);
+       contenedor_pag.appendChild(div);
+    })
 }
+iniciar_campeones();
