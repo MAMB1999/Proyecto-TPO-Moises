@@ -220,44 +220,56 @@ const campeones = [
     },
 ];
 
-
+let description_actual = null;
 const contenedor_pag = document.getElementById("contenedor_campeones");
 function iniciar_campeones(){
     campeones.forEach((campeon,index) =>{
         const li = document.createElement("li");
-        const div_titulo = document.createElement("div");
-        const div_img = document.createElement("div");
         const article = document.createElement("article");
-        const a = document.createElement("a");
-        const img = document.createElement("img");
+        const div_titulo = document.createElement("div");
+        const h2 = document.createElement("h2");
+        const div_img_desc = document.createElement("div")
+        //modificaciones a div_img_desc
+        div_img_desc.className = "contenedor_campeones_img_desc"
+        //modificaciones al contenedor div titulo y h2
+        div_titulo.className = "contenedor_campeones_titulo";
+        h2.className = "titulo_campeon";
+        h2.textContent = campeon.name;
+
+        //modificaciones a li y article
         li.className = "contenido_campeon";
-        a.textContent = campeon.name;
-        a.href = "#" + campeon.name;
-        div_img.id = campeon.name;
-        img.src = campeon.imagen;
-        a.addEventListener("click", () =>  mostrar_descripcion(index));
-        div_titulo.appendChild(a);
-        div_img.appendChild(img);
-        article.appendChild(div_img);
+        //agrega al dom
+        div_titulo.appendChild(h2);
+        div_img_desc.appendChild(mostrar_imagenes(index));
+        div_img_desc.appendChild(mostrar_descripcion(index))
+        article.appendChild(div_img_desc);
         article.appendChild(div_titulo);
         li.appendChild(article);
         contenedor_pag.appendChild(li);
-        
         
     })
 }
 iniciar_campeones();
 
+
+// agregar imagenes
+function mostrar_imagenes(showindex){
+    const div_img = document.createElement("div");
+    const img = document.createElement("img");
+    div_img.className = "contenedor_campeones_img";
+    img.src = campeones[showindex].imagen;
+    div_img.appendChild(img);
+    return div_img;
+}
+//agregar descripcion
 function mostrar_descripcion(showindex){
-    const agregar_descripcion = document.getElementById(campeones[showindex].name);
-    
     const div = document.createElement("div");
     const p = document.createElement("p");
-    div.className = "contenedor_descripcion";
+    div.id = campeones[showindex].name;
+    div.className = "contenedor_campeones_descripcion";
     p.textContent = campeones[showindex].description;
-    div.appendChild(p)
-    return agregar_descripcion.appendChild(div);
-    
+    div.appendChild(p);
+    return div
     
     
 }

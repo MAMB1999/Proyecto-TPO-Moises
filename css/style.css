@@ -193,7 +193,7 @@ body{
     font-size: 2.5em;
     padding: 5% 5% 5% 0;
 
-}.conte
+}
 /*contenedor_fina1 */
 .contenedor_final1{
     width: 30%;
@@ -234,37 +234,40 @@ body{
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-
 }/*contenido_campeon */
 .contenido_campeon{
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    
+    animation-name: animar_contenedor_campeon;
+    display: block;
+    width: 280px;
+
 }
-.contenido_campeon article div:last-child{
+.contenedor_campeones_img img{
+   width: 100%;
+   height: auto;
+}.contenedor_campeones_descripcion{
+  height: 200px;
+  display: none;
+  overflow-y: scroll;
+}
+/* .contenedor_campeones_titulo */
+.contenedor_campeones_titulo{
    height: 50px;
    display: flex;
    align-items: center;
    background-color: rgb(1, 184, 184);
    clip-path: polygon(100% 0, 100% 38%, 82% 100%, 0 100%, 0 0);
 }
-.contenido_campeon article img{
-    display: inline-block;
-    object-fit:cover;
-    height: 280px;
-    width: 100%;
-}.contenido_campeon a{
+/* enlace campeon */
+.titulo_campeon{
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 1.3em;
     color: rgb(255, 255, 255);
-padding-left: 5%;
+    padding-left: 5%;   
+}
+.contenido_campeon:active .contenedor_campeones_descripcion{
+    display: block;
     
-}.descripcion_campeon{
-    height: 300px;
-}.contenedor_descripcion{
-    height: max-content;
 }
