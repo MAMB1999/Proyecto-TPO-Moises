@@ -241,7 +241,7 @@ body{
     width: 30%;
 }
 .contenedor_final2 p{
-    font-size: 0.9sem;
+    font-size: 0.9em;
 }
 
 
@@ -301,3 +301,78 @@ align-content: center;
     background-color: rgb(165, 138, 68);
     transition: 1s;  
 }
+
+
+
+
+
+
+
+
+.contenedor_formulario{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+    background-image: url(/img/archivos_campeones/alistar_skin01.jpg),url(/img/archivos_campeones/Darius_Skin01.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left , top right;
+   
+}
+.contenedor_formulario > div{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    margin: 0 auto;
+    width: 70%;
+}
+.contenedor_formulario button{
+    display: block;
+    border:none;
+    font-size: 1em;
+    width: 18%;
+    padding: 8px;
+    margin: 10px auto ;
+}.contenedor_formulario p{
+    background: white;
+    color: black;
+    height: 60px;
+    margin: 0 auto;
+    width: 40%;
+}
+.contenedor_grupo_formulario{
+    padding-top: 50px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+}.grupo_formulario{
+    max-width: 400px;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}.grupo_formulario input{
+    border: none;
+    margin: 0 auto;
+    padding: 15px 10px;
+    width: 90%;
+    clip-path: polygon(2% 0, 100% 0, 98% 100%, 0% 100%);
+    
+    
+}.grupo_formulario input::-webkit-input-placeholder{
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    font-style: italic;
+}.grupo_formulario label{
+    display: none;
+    
+}.
+
+
+
+
