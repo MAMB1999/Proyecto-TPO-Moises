@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
@@ -9,31 +10,31 @@
         <!-- css -->
         <link rel="stylesheet" href="/css/style.css" type="text/css">
         <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-        <!DOCTYPE html>
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
-        <link rel="manifest" href="/img/favicon/manifest.json">
-        <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+                              <link rel="manifest" href="/img/favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <!-- font-awesome -->
         <script src="https://kit.fontawesome.com/97a646fdfb.js" crossorigin="anonymous"></script>
-        <title>WolfRift - Campeones</title>
+
+        <title>WolfRift - Aprende a jugar Lol</title>
     </head>
     <body>
     <header>
-        <!-- contenedor_navegacion -->
+         <!-- contenedor_navegacion -->
         <div class="contenedor_navegacion">
             <a href="/index.html"><img  src="/img/logo_pagina.jpg" alt="Logo de la pagina WolfRift"></a>
             <div>
@@ -45,33 +46,43 @@
                     <li><a target="_blank" href="/index.html">Inicio</a></li>
                     <li><a target="_blank" href="/html/campeones.html">Campeones</a></li>
                     <li><a target="_blank" href="/html/registrate.html">Registrate</a></li>
-                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.riotgames.league.wildrift&referrer=singular_click_id%3D1f46dfe8-2407-4bc2-935b-80f61266542d">Descarga WildRift</a></li>
+                    <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.riotgames.league.wildrift&referrer=singular_click_id%3D1f46dfe8-2407-4bc2-935b-80f61266542d">Registrate a wildRift</a></li>
                 </ul>
             </nav>
         </div>
+        <div class="titulos_principales">
+            <h3 class="subtitulo">Ingresa a WolfRift</h3>
+        </div>
     </header>
     <main>
-        <!-- main_campeones -->
-        <section class="main_campeones ">
-            <!-- titulos_principales -->
-            <div class="titulos_principales">
-                <h1>Selecciona tú <span>Campeón</span></h1>
+        <form action="/script/formulario.js" method="POST" id="form" class="contenedor_formulario">
+            <div>
+                <div class="contenedor_grupo_formulario ">
+                    <div class="grupo_formulario">
+                        <input type="text" name="" id="name" placeholder="Nombre de usuario" required>
+                        <label for="">Nombre</label>
+                        
+                    </div>
+                    <div class="grupo_formulario">
+                        <input type="email" name="" id="email" placeholder="Correo electronico" required>
+                        <label for="email">Correo</label>
+                        
+                    </div>
+                    <div class="grupo_formulario">
+                        <input type="password" name="" id="Contrasena" placeholder="Contrasena" required>
+                        <label for="">Contraseña</label>
+                    </div>
+                </div>
+                <button type="submit">Registrate</button>
+                <p class="notificacion" id="notificacion"></p>
             </div>
-           
-             <nav >
-                    <!-- contenedor_campeones -->
-                    <ul class="contenedor_campeones" id="contenedor_campeones">
-                    <!-- contenido_campeon generado en js --> 
-                    </ul>
-             </nav>
-            
-            
-        </section>
+        </form>
     </main>
     <!-- contenido_final -->
     <footer class="contenido_final">
         <div>
-            <a href="/index.html"></a>
+            <a target="_blank" href="/index.html"><img src="/img/logo_pagina.jpg" alt="Logo de la pagina WolfRift"></a>
+            
         </div>
         <!-- contenedor_final1 -->
         <div class="contenedor_final1">
@@ -100,7 +111,6 @@
 
         </div>
     </footer>
-    <script src="/script/datos.js"></script>
-    <script src="/script/main.js"></script>
+    <script src="/script/formulario.js"></script>
     </body>
 </html>
