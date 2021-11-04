@@ -1,3 +1,7 @@
+
+//JSON ALMACENADORES DE DATA 
+
+//Campeones 
 var campeones = [
     {
         name:"Ahri",
@@ -218,3 +222,21 @@ var campeones = [
 
     },
 ];
+
+
+//Cambiar imagenes de index
+
+var imagenes = [
+    {
+        img_index: "/img/archivos_section/campeones_presentacion.jpg",
+        description_index:"Explora el mundo de League of Legends, el mundo de Runaterra, y la comunidad global de increíbles fanáticos."
+    },
+    {
+        img_index: "/img/archivos_section/League_of_leguends_worlds_2019.jpg",
+        description_index:"Participa en los eventos masivos, partidas de esports de LoL de alto nivel, y experiencias de juego inolvidables."
+    },
+    {
+        img_index: "/img/archivos_section/teemo_dibujo.jpg",
+        description_index:"Participa en los eventos masivos, partidas de esports de LoL de alto nivel, y experiencias de juego inolvidables."
+    },
+]
